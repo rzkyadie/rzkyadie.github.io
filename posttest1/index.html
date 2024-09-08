@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pemesanan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        .logo {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .total, .pajak, .tagihan {
+            text-align: right;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="center">
+            <img src="logo-resto.jpeg" alt="Logo Resto" class="logo">
+            <h2>Bukti Pemesanan</h2>
+        </div>
+
+        <div class="flex">
+            <div><b>Nama Pelayan:</b> Mohammad Rizky Adie Putra</div>
+            <div><b>Tanggal Pemesanan:</b> <input type="date"></div>
+        </div>
+        <div class="flex">
+            <div><b>Nama Pemesan:</b> Muhammad Sumbul</div>
+            <div><b>Alamat Pemesan:</b> Jl. Cendana No. 07, Kota Samarinda</div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Menu</th>
+                    <th>Jumlah</th>
+                    <th>Harga Satuan</th>
+                    <th>Total Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="nasi-goreng.jpeg" alt="Nasi Goreng" style="width:100px;"><br>Nasi Goreng Spesial</td>
+                    <td><input type="number" value="1"> Porsi</td>
+                    <td>Rp 25.000</td>
+                    <td>Rp 25.000</td>
+                </tr>
+                <tr>
+                    <td><img src="es-teh-manis.jpeg" alt="Es Teh Manis" style="width:100px;"><br>Es Teh Manis</td>
+                    <td><input type="number" value="1"> Gelas</td>
+                    <td>Rp 5.000</td>
+                    <td>Rp 5.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <tr>
+                <td class="total">Total Pesanan</td>
+                <td>Rp 30.000</td>
+            </tr>
+            <tr>
+                <td class="pajak">Pajak</td>
+                <td>Rp 2.000</td>
+            </tr>
+            <tr>
+                <td class="tagihan"><b>Total Tagihan</b></td>
+                <td><b>Rp 32.000</b></td>
+            </tr>
+        </table>
+
+        <p><b>Metode Pembayaran:</b></p>
+        <div class="radio-group">
+            <label><input type="radio" name="payment" value="bca"> Bank BCA</label>
+            <label><input type="radio" name="payment" value="bri"> Bank BRI</label>
+            <label><input type="radio" name="payment" value="ovo"> OVO</label>
+            <label><input type="radio" name="payment" value="gopay"> GoPay</label>
+        </div>
+
+    <ul style="list-style-type: symbols();"></ul>
+        <li>Nama: Mohammad Rizky Adie Putra</li>
+        <li>NIM: 2309106081</li>
+        <li>Praktikum Web:<a href="https://github.com/rzkyadie/rzkyadie.github.io"> Posttest 1</a></li>
+    </ul>
+
+</body>
+</html>
