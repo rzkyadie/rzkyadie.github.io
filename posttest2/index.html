@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pembayaran Berhasil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f3ec;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f8f8f8;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .seleksi-kiri, .seleksi-kanan {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .seleksi-kiri {
+            border-right: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .address {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .address p {
+            margin: 5px 0;
+        }
+
+        .tombol-lacak {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f97373;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .tombol-lacak:hover {
+            background-color: #f74a4a;
+        }
+
+        .ringkasan-pesanan {
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .ringkasan-pesanan h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .order-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .order-item-detail {
+            flex: 1;
+        }
+
+        .order-item-title {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .order-item-qty {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .order-item-harga {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .total {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .order-info {
+            font-size: 12px;
+            color: #999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container"></div>
+        <img src="logo-resto.jpeg" alt="Logo Restoran" class="logo">
+    </div>
+
+    <div class="container">
+        <div class="seleksi-kiri">
+            <h1>Terimakasih atas pembelian anda!</h1>
+            <p>Pesanan anda sedang diproses mohon menunggu.pesanan anda akan sampai dalam 24 jam.</p>
+            
+            <div class="address">
+                <h3>Billing address:</h3>
+                <p><strong>Mohammad Rizky Adie Putra</strong></p>
+                <p>Jalan.Cendana No.07 RT.19</p>
+                <p>Telepon: 08231884999</p>
+                <p>Email: rizkyadie10@gmail.com</p>
+                <p>Praktikum Web:<a href="https://github.com/rzkyadie/rzkyadie.github.io"> Posttest 2</a></p>
+            </div>
+
+            <button class="tombol-lacak">Lacak Pesanan Anda</button>
+        </div>
+
+        <div class="seleksi-kanan">
+            <div class="ringkasan-pesanan">
+                <h2>Pesanan anda</h2>
+
+                <div class="order-item">
+                    <img src="nasi-goreng.jpeg" alt="Nasi Goreng Spesial">
+                    <div class="order-item-detail">
+                        <p class="order-item-title">Nasi Goreng Spesial</p>
+                        <p class="order-item-qty">Qty: 1</p>
+                    </div>
+                    <p class="order-item-harga">Rp25.000</p>
+                </div>
+
+                <div class="order-item">
+                    <img src="es-teh-manis.jpeg" alt="Es Teh Manis">
+                    <div class="order-item-detail">
+                        <p class="order-item-title">Es Teh Manis</p>
+                        <p class="order-item-qty">Qty: 1</p>
+                    </div>
+                    <p class="order-item-harga">Rp5.000</p>
+                </div>
+
+                <div class="total">
+                    <span>Total Pesanan</span>
+                    <span>Rp30.000</span>
+                </div>
+
+                <div class="total">
+                    <span>Pajak</span>
+                    <span>Rp2.000</span>
+                </div>
+
+                <div class="total">
+                    <span>Order Total</span>
+                    <span>Rp32.000</span>
+                </div>
+
+                <p class="order-info">Tanggal Order: 17 September 2024</p>
+                <p class="order-info">Order ID: #123456789</p>
+                <p class="order-info">Metode Pembayaran: GoPay</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
