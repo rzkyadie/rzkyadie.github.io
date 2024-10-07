@@ -1,5 +1,4 @@
 <?php
-// Cek apakah ID ada di URL
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $file = file('data.txt');
